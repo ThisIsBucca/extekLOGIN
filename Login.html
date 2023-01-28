@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src\css\App.css">
+    <title>EXTEK Login</title>
+
+</head>
+
+<body>
+
+    <!--Login component start here-->
+    <div class="App">
+        <h1>Login</h1>
+
+        <form action="/" method="post">
+            <h4>Welcome back!</h4>
+            <input class="ico ico-email" type="email" placeholder="Email" required />
+
+            <div class="input-changer">
+                <input type="password" placeholder="Password" name="Password" id="password" required />
+                <li class="ico ico-pass" onclick=hide() > </li>
+            </div>
+
+            <div class="helpers">
+                <p>I forgot my password</p>
+
+                <div class="chekbox-container">
+                    <input type="checkbox" id="labor" />
+                    <label for="checbox">Remember me</label>
+                </div>
+
+            </div>
+
+            <button type="submit" name="sign">Sign in</button>
+
+            <div class='cont-query'>
+                <p class='query'>Don't have an account ?</p>
+            </div>
+
+            <button type="submit" name="register"> Register</button>
+
+        </form>
+    </div>
+    <!-- login component ends here-->
+
+    <!-- SCRIPTS START HERE -->
+    <script src="src\scripts\App.js"></script>
+
+</body>
+
+</html>
+

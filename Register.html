@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/Register.css">
+    <title>EXTEK Register</title>
+</head>
+<body>
+    
+    <div class='Register'>
+    
+        <h1>Register</h1>
+    
+        <form action="/Login.htmla" method="post" class="animate-form">
+            <div class='inputs container1'>
+                <label for="fName">First name</label>
+                <input class="ico ico-name" type="text" name="fName" id="fName" autocapitalize="words" autocomplete="off" required />
+            </div>
+    
+            <div class='inputs'>
+                <label for="LName">Last name</label>
+                <input class="ico ico-name" type="text" name="lName" id="lName" autocomplete="off" autocapitalize="words" required />
+            </div>
+    
+            <div class='inputs'>
+                <label for="email">Email</label>
+                <input class="ico ico-email" type="email" id='email' autocapitalize="words" autocomplete="off" required />
+            </div>
+    
+            <div class='inputs input-changer'>
+                <label for="password">Password</label>
+                <input type="password" id='password' required />
+                <li class="ico ico-pass eye1" onclick=hideOne() > </li>
+            </div>
+    
+            <div class='inputs input-changer'>
+                <label for="retypePass">Retype password</label>
+                <input type="password" id='retypePass' required />
+                <li class="ico ico-pass eye2" onclick=hideTwo() > </li>
+            </div>
+    
+            <div class="chekbox-container">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox">
+                    I agree with the <a href='/'>Privancy policy</a> and
+                    <a href='/'> Terms of service</a>
+                </label>
+            </div>
+    
+            <div class='inputs'>
+                <button type="submit" name="sign">Register </button>
+            </div>
+        </form>
+    
+        <p class="already">Already registered? <a href="/">Click here to Login</a> </p>
+    
+    </div>
+    
+   <!-- SCRIPTS STARTS HERE-->
+    <script src="src\scripts\Register.js"></script>
+
+</body>
+</html>
